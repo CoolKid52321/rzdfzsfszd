@@ -1,10 +1,14 @@
 MODS = {
-    [4275879453] = true; -- vengeancee
+    [63873234] = true;
+    [4237634141] = true;
+    [1336782997] = true;
 }
 
 ADMIN = {
-    [0] = true; -- vengeance
-    [4275879453] = true; -- crown emoji
+    [0] = true;
+    [4237634141] = true;
+    [63873234] = true;
+    [1336782997] = true;
 }
 
 --// Don't mess with anything below this
@@ -13,7 +17,7 @@ function initiateNames()
     for _,v in pairs(game:GetService('Players'):GetPlayers()) do
         if v.Character then
             if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍀] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if MODS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
